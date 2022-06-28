@@ -1,0 +1,54 @@
+﻿<Page x:Class="Project_3_db_opdracht.VerkiezingPartijen"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Project_3_db_opdracht"
+      mc:Ignorable="d" 
+      d:DesignHeight="365" d:DesignWidth="800"
+      Title="VerkiezingPartijen">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+        <DataGrid Name ="Partijen" AutoGenerateColumns="False"  Background="#FF376368" Grid.Column="1" Grid.ColumnSpan="3" Grid.Row="0" Grid.RowSpan="3" Margin="20">
+            <DataGrid.Columns>
+                <DataGridTextColumn Binding="{Binding }" Header="Partij id" Width="285"></DataGridTextColumn>
+                <DataGridTextColumn Binding="{Binding }" Header="Verkiezing id" Width="285"></DataGridTextColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Grid Grid.Column="0" Grid.Row="0" Grid.RowSpan="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+
+            </Grid.RowDefinitions>
+
+            <TextBox Grid.Row="1" Grid.Column="1" HorizontalAlignment="Center" Height="23" TextWrapping="Wrap" Text="Partij id" VerticalAlignment="Top" Width="120" Margin="5"/>
+            <TextBox Grid.Row="2" Grid.Column="1" HorizontalAlignment="Center" Height="23" TextWrapping="Wrap" Text="Verkiezing id" VerticalAlignment="Top" Width="120" Margin="5"/>
+            <Button Grid.Row="3" Content="Create" HorizontalAlignment="Center" VerticalAlignment="Top" Width="120" Margin="5"/>
+        </Grid>
+
+        <StackPanel Grid.Column="0" Grid.Row="2">
+            <Button Content="Update" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="20"/>
+            <Button Content="Delete" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="20"/>
+        </StackPanel>
+    </Grid>
+</Page>
