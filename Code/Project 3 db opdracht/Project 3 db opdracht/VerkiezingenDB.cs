@@ -47,7 +47,85 @@ namespace Project_3_db_opdracht
             {
                 MySqlCommand command = _connection.CreateCommand();
 
-                command.CommandText = "SELECT * FROM partij";
+                command.CommandText = "SELECT * FROM thema";
+
+                MySqlDataReader reader = command.ExecuteReader();
+
+                uitslag.Load(reader);
+            }
+            catch (Exception)
+            {
+
+            }
+            finally
+            {
+                _connection.Close();
+            }
+
+            return uitslag.DefaultView;
+        }
+        //Read 3
+        public DataView krijgAlleItemsStandpunten()
+        {
+            _connection.Open();
+            DataTable uitslag = new DataTable();
+            try
+            {
+                MySqlCommand command = _connection.CreateCommand();
+
+                command.CommandText = "SELECT * FROM standpunt";
+
+                MySqlDataReader reader = command.ExecuteReader();
+
+                uitslag.Load(reader);
+            }
+            catch (Exception)
+            {
+
+            }
+            finally
+            {
+                _connection.Close();
+            }
+
+            return uitslag.DefaultView;
+        }
+        //Read 4
+        public DataView krijgAlleItemsVerkiezingsoorten()
+        {
+            _connection.Open();
+            DataTable uitslag = new DataTable();
+            try
+            {
+                MySqlCommand command = _connection.CreateCommand();
+
+                command.CommandText = "SELECT * FROM verkiezingsoort";
+
+                MySqlDataReader reader = command.ExecuteReader();
+
+                uitslag.Load(reader);
+            }
+            catch (Exception)
+            {
+
+            }
+            finally
+            {
+                _connection.Close();
+            }
+
+            return uitslag.DefaultView;
+        }
+        //Read 5
+        public DataView krijgAlleItemsVerkiezing()
+        {
+            _connection.Open();
+            DataTable uitslag = new DataTable();
+            try
+            {
+                MySqlCommand command = _connection.CreateCommand();
+
+                command.CommandText = "SELECT * FROM verkiezing";
 
                 MySqlDataReader reader = command.ExecuteReader();
 

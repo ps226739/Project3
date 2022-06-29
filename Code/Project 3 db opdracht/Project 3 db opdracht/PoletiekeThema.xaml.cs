@@ -20,9 +20,18 @@ namespace Project_3_db_opdracht
     /// </summary>
     public partial class PoletiekeThema : Page
     {
+        VerkiezingenDB db = new VerkiezingenDB();
         public PoletiekeThema()
         {
             InitializeComponent();
+            laadItems();
         }
+
+        public void laadItems()
+        {
+            var data = db.krijgAlleItemsThema();
+            Thema.ItemsSource = data;
+        }
+
     }
 }

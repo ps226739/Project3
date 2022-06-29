@@ -22,9 +22,9 @@
         </Grid.RowDefinitions>
         <DataGrid Name ="Standpunt" AutoGenerateColumns="False"  Background="#FF376368" Grid.Column="1" Grid.ColumnSpan="3" Grid.Row="0" Grid.RowSpan="3" Margin="20">
             <DataGrid.Columns>
-                <DataGridTextColumn Binding="{Binding }" Header="Standpunt id" Width="180"></DataGridTextColumn>
-                <DataGridTextColumn Binding="{Binding }" Header="Thema id" Width="180"></DataGridTextColumn>
-                <DataGridTextColumn Binding="{Binding }" Header="Standpunt" Width="180"></DataGridTextColumn>
+                <DataGridTextColumn Binding="{Binding standpunt_id}" Header="Standpunt id" Width="180"></DataGridTextColumn>
+                <DataGridTextColumn Binding="{Binding thema_id}" Header="Thema id" Width="180"></DataGridTextColumn>
+                <DataGridTextColumn Binding="{Binding standpunt}" Header="Standpunt" Width="180"></DataGridTextColumn>
             </DataGrid.Columns>
         </DataGrid>
         <Grid Grid.Column="0" Grid.Row="0" Grid.RowSpan="2">

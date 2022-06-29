@@ -20,11 +20,11 @@
             <RowDefinition Height="1*"/>
             <RowDefinition Height="1*"/>
         </Grid.RowDefinitions>
-        <DataGrid Name ="Partijen" AutoGenerateColumns="False"  Background="#FF376368" Grid.Column="1" Grid.ColumnSpan="3" Grid.Row="0" Grid.RowSpan="3" Margin="20">
+        <DataGrid Name ="verkiezings" AutoGenerateColumns="False"  Background="#FF376368" Grid.Column="1" Grid.ColumnSpan="3" Grid.Row="0" Grid.RowSpan="3" Margin="20">
             <DataGrid.Columns>
-                <DataGridTextColumn Binding="{Binding }" Header="Verkiezing id" Width="187"></DataGridTextColumn>
-                <DataGridTextColumn Binding="{Binding }" Header="Verkiezingsoort id" Width="186"></DataGridTextColumn>
-                <DataGridTextColumn Binding="{Binding }" Header="Verkiezingsoort" Width="185"></DataGridTextColumn>
+                <DataGridTextColumn Binding="{Binding verkiezing_id}" Header="Verkiezing id" Width="187"></DataGridTextColumn>
+                <DataGridTextColumn Binding="{Binding verkiezingsoortID}" Header="Verkiezingsoort id" Width="186"></DataGridTextColumn>
+                <DataGridTextColumn Binding="{Binding datum}" Header="Verkiezingsoort" Width="185"></DataGridTextColumn>
             </DataGrid.Columns>
         </DataGrid>
         <Grid Grid.Column="0" Grid.Row="0" Grid.RowSpan="2">

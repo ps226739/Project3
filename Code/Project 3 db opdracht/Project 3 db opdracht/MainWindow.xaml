@@ -33,7 +33,7 @@
             <Button Content="Poletieke&#x0a; partijen" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="0" Click="Button1_Click" Width="133" Height="90"/>
             <Button Content="Poletieke&#x0a; thema's" HorizontalAlignment="center" VerticalAlignment="Center" Grid.Column="1" Click="Button2_Click" Width="133" Height="90"/>
             <Button Content="Standpunten" HorizontalAlignment="center" VerticalAlignment="Center"  Grid.Column="2" Click="Button3_Click" Width="133" Height="90"/>
-            <Button Content="Verkiezingssoort" HorizontalAlignment="center" VerticalAlignment="Center"  Grid.Column="3" Click="Button4_Click" Width="133" Height="90"/>
+            <Button Content="Verkiezingsoort" HorizontalAlignment="center" VerticalAlignment="Center"  Grid.Column="3" Click="Button4_Click" Width="133" Height="90"/>
             <Button Content="verkiezingen" HorizontalAlignment="center" VerticalAlignment="Center" Grid.Column="4" Click="Button5_Click" Width="133" Height="90"/>
             <Button Content="Verkiezings&#x0a; partijen" HorizontalAlignment="center" VerticalAlignment="Center"  Grid.Column="5" Click="Button6_Click" Width="133" Height="90"/>
         </Grid>

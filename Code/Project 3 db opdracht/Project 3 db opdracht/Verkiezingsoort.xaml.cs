@@ -20,9 +20,17 @@ namespace Project_3_db_opdracht
     /// </summary>
     public partial class Verkiezingsoort : Page
     {
+        VerkiezingenDB db = new VerkiezingenDB();
         public Verkiezingsoort()
         {
             InitializeComponent();
+            laadItems();
+        }
+
+        public void laadItems()
+        {
+            var data = db.krijgAlleItemsVerkiezingsoorten();
+            soort.ItemsSource = data;
         }
     }
 }

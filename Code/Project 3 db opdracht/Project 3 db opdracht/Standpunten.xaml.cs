@@ -20,9 +20,18 @@ namespace Project_3_db_opdracht
     /// </summary>
     public partial class Standpunten : Page
     {
+        VerkiezingenDB db = new VerkiezingenDB();
         public Standpunten()
         {
             InitializeComponent();
+            laadItems();
         }
+
+        public void laadItems()
+        {
+            var data = db.krijgAlleItemsStandpunten();
+            Standpunt.ItemsSource = data;
+        }
+
     }
 }
