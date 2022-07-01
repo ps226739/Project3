@@ -42,13 +42,13 @@
             </Grid.RowDefinitions>
 
 
-            <TextBox Grid.Row="2" Grid.Column="1" HorizontalAlignment="Center" Height="23" TextWrapping="Wrap" Text="Thema" VerticalAlignment="Top" Width="120" Margin="5"/>
-            <Button Grid.Row="3" Content="Create" HorizontalAlignment="Center" VerticalAlignment="Top" Width="120" Margin="5"/>
+            <TextBox x:Name="tb_thema" Grid.Row="2" Grid.Column="1" HorizontalAlignment="Center" Height="23" TextWrapping="Wrap" Text="Thema" VerticalAlignment="Top" Width="120" Margin="5"/>
+            <Button x:Name="btn_maakthema" Grid.Row="3" Content="Create" HorizontalAlignment="Center" VerticalAlignment="Top" Width="120" Margin="5" Click="MaakThema_Click"/>
         </Grid>
 
         <StackPanel Grid.Column="0" Grid.Row="2">
             <Button Content="Update" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="20"/>
-            <Button Content="Delete" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="20"/>
+            <Button Content="Delete" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="20" Click="DeleteThema_Click"/>
         </StackPanel>
     </Grid>
 </Page>

@@ -24,7 +24,7 @@
             <DataGrid.Columns>
                 <DataGridTextColumn Binding="{Binding verkiezing_id}" Header="Verkiezing id" Width="187"></DataGridTextColumn>
                 <DataGridTextColumn Binding="{Binding verkiezingsoortID}" Header="Verkiezingsoort id" Width="186"></DataGridTextColumn>
-                <DataGridTextColumn Binding="{Binding datum}" Header="Verkiezingsoort" Width="185"></DataGridTextColumn>
+                <DataGridTextColumn Binding="{Binding datum}" Header="Datum" Width="185"></DataGridTextColumn>
             </DataGrid.Columns>
         </DataGrid>
         <Grid Grid.Column="0" Grid.Row="0" Grid.RowSpan="2">

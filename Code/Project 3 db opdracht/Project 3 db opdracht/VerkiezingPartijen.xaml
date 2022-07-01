@@ -20,10 +20,10 @@
             <RowDefinition Height="1*"/>
             <RowDefinition Height="1*"/>
         </Grid.RowDefinitions>
-        <DataGrid Name ="Partijen" AutoGenerateColumns="False"  Background="#FF376368" Grid.Column="1" Grid.ColumnSpan="3" Grid.Row="0" Grid.RowSpan="3" Margin="20">
+        <DataGrid Name ="verkiezingsPartijen" AutoGenerateColumns="False"  Background="#FF376368" Grid.Column="1" Grid.ColumnSpan="3" Grid.Row="0" Grid.RowSpan="3" Margin="20">
             <DataGrid.Columns>
-                <DataGridTextColumn Binding="{Binding }" Header="Partij id" Width="285"></DataGridTextColumn>
-                <DataGridTextColumn Binding="{Binding }" Header="Verkiezing id" Width="285"></DataGridTextColumn>
+                <DataGridTextColumn Binding="{Binding partij_id}" Header="Partij id" Width="285"></DataGridTextColumn>
+                <DataGridTextColumn Binding="{Binding verkiezingID}" Header="Verkiezing id" Width="285"></DataGridTextColumn>
             </DataGrid.Columns>
         </DataGrid>
         <Grid Grid.Column="0" Grid.Row="0" Grid.RowSpan="2">

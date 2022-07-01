@@ -29,7 +29,7 @@ namespace Project_3_db_opdracht
 
         public void laadItems()
         {
-            var data = db.krijgAlleItemsThema();
+            var data = db.krijgAlleItemsVerkiezing();
             verkiezings.ItemsSource = data;
         }
     }

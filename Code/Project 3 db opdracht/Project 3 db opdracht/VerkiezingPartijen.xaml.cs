@@ -20,9 +20,17 @@ namespace Project_3_db_opdracht
     /// </summary>
     public partial class VerkiezingPartijen : Page
     {
+        VerkiezingenDB db = new VerkiezingenDB();
         public VerkiezingPartijen()
         {
             InitializeComponent();
+            laadItems();
+        }
+
+        public void laadItems()
+        {
+            var data = db.krijgAlleItemsVerkiezingPartijen();
+            verkiezingsPartijen.ItemsSource = data;
         }
     }
 }

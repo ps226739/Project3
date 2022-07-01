@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -31,6 +32,36 @@ namespace Project_3_db_opdracht
         {
             var data = db.krijgAlleItemsThema();
             Thema.ItemsSource = data;
+        }
+
+        private void MaakThema_Click(object sender, RoutedEventArgs e)
+        {
+            if (db.NieuweThema(tb_thema.Text))
+            {
+                MessageBox.Show("gelukt!");
+                laadItems();
+            }
+            else
+            {
+                MessageBox.Show("iets ging mis");
+            }
+
+            tb_thema.Text = string.Empty;
+        }
+        private void DeleteThema_Click(object sender, RoutedEventArgs e)
+        {
+            var selected = Thema.SelectedItem as DataRowView;
+            int id = Convert.ToInt32(selected.Row.ItemArray[0]);
+
+            if (db.verwijderThema(id))
+            {
+                MessageBox.Show("deleted item");
+                laadItems();
+            }
+            else
+            {
+                MessageBox.Show("");
+            }
         }
 
     }

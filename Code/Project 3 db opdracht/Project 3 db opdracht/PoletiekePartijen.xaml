@@ -47,18 +47,18 @@
 
             </Grid.RowDefinitions>
 
-            <TextBox Grid.Row="1" Grid.Column="1" HorizontalAlignment="Center" Height="23" TextWrapping="Wrap" Text="Adres" VerticalAlignment="Top" Width="120" Margin="5"/>
-            <TextBox Grid.Row="2" Grid.Column="1" HorizontalAlignment="Center" Height="23" TextWrapping="Wrap" Text="Telefoonnummer" VerticalAlignment="Top" Width="120" Margin="5"/>
-            <TextBox Grid.Row="0" Grid.Column="1" HorizontalAlignment="Center" Height="23" TextWrapping="Wrap" Text="Naam" VerticalAlignment="Top" Width="120" Margin="5"/>
-            <TextBox Grid.Row="3" Grid.Column="1" HorizontalAlignment="Center" Height="23" TextWrapping="Wrap" Text="emailadres" VerticalAlignment="Top" Width="120" Margin="5"/>
-            <TextBox Grid.Row="4" Grid.Column="1" HorizontalAlignment="Center" Height="23" TextWrapping="Wrap" Text="gemeente" VerticalAlignment="Top" Width="120" Margin="5"/>
-            <TextBox Grid.Row="5" Grid.Column="1" HorizontalAlignment="Center" Height="23" TextWrapping="Wrap" Text="Postcode" VerticalAlignment="Top" Width="120" Margin="5"/>
-            <Button Grid.Row="7" Content="Create" HorizontalAlignment="Center" VerticalAlignment="Top" Width="120" Margin="5"/>
+            <TextBox x:Name="tb_adres" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Center" Height="23" TextWrapping="Wrap" Text="Adres" VerticalAlignment="Top" Width="120" Margin="5"/>
+            <TextBox x:Name="tb_telefoonnummer" Grid.Row="2" Grid.Column="1" HorizontalAlignment="Center" Height="23" TextWrapping="Wrap" Text="Telefoonnummer" VerticalAlignment="Top" Width="120" Margin="5"/>
+            <TextBox x:Name="tb_naam" Grid.Row="0" Grid.Column="1" HorizontalAlignment="Center" Height="23" TextWrapping="Wrap" Text="Naam" VerticalAlignment="Top" Width="120" Margin="5"/>
+            <TextBox x:Name="tb_emailadres" Grid.Row="3" Grid.Column="1" HorizontalAlignment="Center" Height="23" TextWrapping="Wrap" Text="emailadres" VerticalAlignment="Top" Width="120" Margin="5"/>
+            <TextBox x:Name="tb_gemeente" Grid.Row="4" Grid.Column="1" HorizontalAlignment="Center" Height="23" TextWrapping="Wrap" Text="gemeente" VerticalAlignment="Top" Width="120" Margin="5"/>
+            <TextBox x:Name="tb_postcode" Grid.Row="5" Grid.Column="1" HorizontalAlignment="Center" Height="23" TextWrapping="Wrap" Text="Postcode" VerticalAlignment="Top" Width="120" Margin="5"/>
+            <Button x:Name="btn_maakpartij" Grid.Row="7" Content="Create" HorizontalAlignment="Center" VerticalAlignment="Top" Width="120" Margin="5" Click="MaakPartij_Click"/>
         </Grid>
          
         <StackPanel Grid.Column="0" Grid.Row="2">
         <Button Content="Update" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="20"/>
-        <Button Content="Delete" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="20"/>
+        <Button Content="Delete" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="20" Click="DeletePartij_Click"/>
         </StackPanel>
     </Grid>
 </Page>
