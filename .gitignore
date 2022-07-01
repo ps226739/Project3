@@ -396,3 +396,6 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+
+Code/Project 3 db opdracht/Project 3 db opdracht/obj/Debug/*
+Code/Project 3 db opdracht/.vs/*
